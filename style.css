@@ -101,7 +101,7 @@ p {
   max-width: 300px; /* Reduced from 400px */
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
   margin: 20px 0;
 }
 
