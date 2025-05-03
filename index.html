@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>It's a Boy – Baby Shower Website Template | Daydream Studios</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+  <!-- Preconnect for faster font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- SEO Meta Tags -->
+ <meta name="description" content="Celebrate a baby boy in style with this dark-themed baby shower website template. Customizable, mobile-friendly, and easy to use!" />
+  <meta name="author" content="Daydream Studios" />
+  <meta name="keywords" content="baby shower, it's a boy, website template, RSVP page, digital invite, baby boy template" />
+</head>
+
+<body>
+  <!-- Fullscreen Background -->
+  <div id="background"></div>
+
+  <!-- Optional Page Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Main Save The Date Section -->
+  <div class="container fade-in">
+    <h1>It’s a Boy!</h1>
+    <p class="names">Ashley’s Baby Shower</p>
+    <p class="date">June 22, 2025</p>
+    <img src="assets/main-couple-photo.jpg" alt="Baby shower main photo" class="photo">
+    <div id="countdown"></div>
+    <p class="location">Little Blue Cottage</p>
+  </div>
+
+  <!-- RSVP Section -->
+  <div class="container fade-in">
+    <h1>RSVP</h1>
+    <p class="names">Save My Spot</p>
+  <a href="https://tinyurl.com/RSVP-Daydream" class="rsvp-button">Join the Baby Bash </a>
+    <p class="location" style="margin-top: 20px;">Kindly reply by May 15</p>
+  </div>
+
+  <!-- Memories Gallery Section -->
+  <div class="container fade-in">
+    <h1>Our Memories</h1>
+    <div class="gallery">
+      <a href="assets/memory-1.jpg" data-lightbox="wedding-gallery" data-title="Memory 1">
+        <img src="assets/memory-1.jpg" alt="Memory 1">
+      </a>
+      <a href="assets/memory-2.jpg" data-lightbox="wedding-gallery" data-title="Memory 2">
+        <img src="assets/memory-2.jpg" alt="Memory 2">
+      </a>
+      <a href="assets/memory-3.jpg" data-lightbox="wedding-gallery" data-title="Memory 3">
+        <img src="assets/memory-3.jpg" alt="Memory 3">
+      </a>
+    </div>
+  </div>
+
+  <!-- Countdown Timer Script -->
+  <script>
+  var countDownDate = new Date("Jun 22, 2025 00:00:00").getTime();
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("countdown").innerHTML =
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "Today is the day!";
+      }
+    }, 1000);
+  </script>
+
+  
+  <!-- Background Slideshow Script -->
+  <script>
+  window.addEventListener('load', function () {
+    const backgrounds = [
+      'assets/extra-background-1.jpg',
+       '#1E2A38',
+       '#A9D6E5',
+      'assets/extra-background-2.jpg',
+       '#FDF6F0',
+       '#D0F4DE',
+      'assets/extra-background-3.jpg',
+        '#3D4C60',
+       '#E3F2FD',
+      'assets/extra-background-4.jpg',
+      'assets/extra-background-5.jpg'
+    ];
+
+    let current = 0;
+    const backgroundDiv = document.getElementById('background');
+
+    function changeBackground() {
+      backgroundDiv.style.transition = "opacity 3s ease-in-out";
+      backgroundDiv.style.opacity = 0;
+      setTimeout(() => {
+        const bg = backgrounds[current];
+        if (bg.startsWith('#')) {
+          backgroundDiv.style.backgroundImage = 'none';
+          backgroundDiv.style.backgroundColor = bg;
+          backgroundDiv.style.animation = "pulse 5s ease-in-out infinite";
+        } else {
+          backgroundDiv.style.backgroundImage = `url('${bg}')`;
+          backgroundDiv.style.backgroundColor = 'transparent';
+          backgroundDiv.style.animation = "none";
+        }
+        backgroundDiv.style.opacity = 1;
+        current = (current + 1) % backgrounds.length;
+      }, 2000);
+    }
+
+    // Start slideshow
+    changeBackground();
+    setInterval(changeBackground, 10000);
+
+    // Loader fade out
+    const loader = document.getElementById('loader');
+    loader.style.opacity = '0';
+    setTimeout(function () {
+      loader.style.display = 'none';
+    }, 500);
+  });
+</script>
+
+
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  
+<footer class="site-footer fade-in">
+  <img src="assets/daydream-logo.png" alt="Daydream Studios logo" class="footer-logo" />
+  <p>© 2025 Daydream Studios · All rights reserved.</p>
+</footer>
+
+
+</body>
+
+</html>
