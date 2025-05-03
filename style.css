@@ -19,12 +19,12 @@
 
 /* General Body */
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Georgia', serif;
   background: url('assets/background.jpg') repeat;
-  background-color: #CDE8F6; 
+  background-color:  #F6E4D0; 
   background-size: cover;
   background-attachment: fixed;
-  color: #2F3E46;
+  color:  #4A3F35;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -38,7 +38,8 @@ body {
 
 /* Main Content Container */
 .container {
-  background-color:  rgba(255, 255, 255, 0.65);
+  background-color:  rgba(255, 250, 240, 1);
+  color: rgba(80, 60, 50, 1);
   border-radius: 12px;
   text-align: center;
   padding: 30px;
@@ -50,26 +51,27 @@ body {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 24px;
-  background-color:  #7DA9B8;
-  color: #FFFFFF;
-  font-family: 'Poppins', sans-serif;
+  background-color:  rgba(242, 222, 206, 1);
+  color:  rgba(255, 252, 247, 1);
+  font-family: 'Playfair Display', serif;
   font-size: 1.2em;
   border: none;
   border-radius: 8px;
   text-decoration: none;
+  cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .rsvp-button:hover {
-  background-color:#5D8E9C;
+  background-color: #B5724D;
 }
 
 /* Headings */
 h1, h2, h3 {
-  font-family: 'Great Vibes', cursive;
-  color: #37505C; /* Soft Navy */
+  font-family: 'Playfair Display', serif;
+  color:   rgba(80, 60, 50, 1);
   text-shadow: 1px 1px 4px #A7C7DC;
 }
 
@@ -83,9 +85,9 @@ h1 {
 
 /* Paragraphs */
 p {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
-  color: #2F3E46;
+  color: #7a6650;
   line-height: 1.6;
   text-align: center;
   text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
