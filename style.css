@@ -34,12 +34,12 @@ body {
 
 /* Main Content Container */
 .container {
-  background-color:  rgba(255, 250, 240, 1);
-  color: rgba(80, 60, 50, 1);
+  background: rgba(255, 255, 255, 0.7); /* Light translucent background */
+  padding: 2rem;
   border-radius: 12px;
-  text-align: center;
-  padding: 30px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 /* RSVP Button */
