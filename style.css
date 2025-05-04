@@ -34,7 +34,7 @@ body {
 
 /* Main Content Container */
 .container {
-  background: rgba(255, 255, 255, 0.7); /* Light translucent background */
+  background: rgba(235, 211, 181, 0.7); /* Cocoa Clay */
   padding: 2rem;
   border-radius: 12px;
   margin: 2rem auto;
@@ -51,7 +51,7 @@ body {
   color:  rgba(255, 252, 247, 1);
   font-family: 'Playfair Display', serif;
   font-size: 1.2em;
-  border: none;
+  border: 2px solid #FFE6C7;
   border-radius: 8px;
   text-decoration: none;
   cursor: pointer;
@@ -67,7 +67,7 @@ body {
 /* Headings */
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
-  color:   rgba(80, 60, 50, 1);
+  color: rgba(199, 177, 152, 0.85); /* Toasted Sage */
   text-shadow: 1px 1px 4px #A7C7DC;
 }
 
@@ -83,7 +83,7 @@ h1 {
 p {
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
-  color: #7a6650;
+  color: #FFF1E6;
   line-height: 1.6;
   text-align: center;
   text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
